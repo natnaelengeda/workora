@@ -28,7 +28,15 @@ import InstagramIcon from "@/assets/icons/instagram-icon.svg";
 
 // Images
 import WorkoraName from "@/assets/imgs/workora-name.svg";
+import HomeImage1 from "@/assets/imgs/home-image-1.svg";
+import HomeImage2 from "@/assets/imgs/home-image-2.svg";
+import HomeImage3 from "@/assets/imgs/home-image-3.svg";
+import HomeImage4 from "@/assets/imgs/home-image-4.svg";
+import HomeImageHeroSection2 from "@/assets/imgs/home-image-hero-section-2.svg";
 
+import SpaceImage1 from "@/assets/imgs/space-1.svg";
+import SpaceImage2 from "@/assets/imgs/space-2.svg";
+import SpaceImage3 from "@/assets/imgs/space-3.svg";
 
 class AppAsset {
     constructor(public name: string, public path: string) { }
@@ -63,6 +71,18 @@ class AppAsset {
 
     static Images = {
         WorkoraName: WorkoraName,
+        HomeImages: {
+            HomeImage1: HomeImage1,
+            HomeImage2: HomeImage2,
+            HomeImage3: HomeImage3,
+            HomeImage4: HomeImage4,
+        },
+        HomeImageHeroSection2: HomeImageHeroSection2,
+        Spaces: {
+            SpaceImage1: SpaceImage1,
+            SpaceImage2: SpaceImage2,
+            SpaceImage3: SpaceImage3,
+        }
     };
 }
 

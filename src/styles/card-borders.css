@@ -1,0 +1,33 @@
+/* .diagonal-borders {
+  background:
+    linear-gradient(white, white) top right / 60px 2px no-repeat,
+    linear-gradient(white, white) top right / 2px 60px no-repeat,
+    #7c4dff;
+
+  border-radius: 12px;
+  padding: 32px;
+  color: white;
+} */
+
+.diagonal-borders {
+  position: relative;
+  background: #7c4dff;
+  border-radius: 12px;
+  padding: 32px;
+  color: white;
+}
+
+.diagonal-borders::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  width: 60px;   /* horizontal length */
+  height: 60px;  /* vertical length */
+
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+  border-right: 1px solid rgba(255, 255, 255, 0.8);
+
+  border-top-right-radius: 12px;
+}

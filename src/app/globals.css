@@ -37,9 +37,10 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-muted: var(--muted);
   --color-secondary-foreground: var(--secondary-foreground);
-  --color-secondary: var(--secondary);
+  --color-secondary: #7C4DFF;
   --color-primary-foreground: var(--primary-foreground);
   --color-primary: var(--primary);
+  /* --color-secondary: "#7C4DFF"; */
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
@@ -122,6 +123,7 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -129,4 +131,19 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+
+@layer components {
+  .card {
+    @apply bg-card text-card-foreground rounded-lg shadow-md p-6;
+  }
+
+  .box-transition{
+    @apply transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ;
+  }
+}
+
+button {
+  cursor: pointer;
 }
