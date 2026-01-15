@@ -1,3 +1,4 @@
+import AppAsset from "@/core/app-asset";
 import Image from "next/image";
 
 export default function Home() {
